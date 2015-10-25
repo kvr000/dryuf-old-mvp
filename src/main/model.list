@@ -1,0 +1,7 @@
+target/_model		net.dryuf.menu.WebProvider				entbean
+target/_model		net.dryuf.menu.WebMenuItem				entbean
+target/_model		net.dryuf.menu.WebAccessiblePage			entbean
+target/_model		net.dryuf.menu.WebLanguage				entbean
+
+target/_model		net.dryuf.mvp.form.ConfirmForm				entbean
+

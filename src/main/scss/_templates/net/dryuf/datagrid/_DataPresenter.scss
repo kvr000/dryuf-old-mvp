@@ -1,0 +1,59 @@
+.net-dryuf-datagrid-DataPresenter-list-behaviour
+{
+	.key
+	{
+		font-weight:		bold;
+	}
+
+	.controls
+	{
+		width:			100%;
+
+		td.globalactions
+		{
+			width:			33%;
+		}
+
+		td.pager
+		{
+			width:			34%;
+			text-align:		center;
+
+			.larr
+			{
+				text-decoration:	none;
+				font-weight:		bold;
+			}
+
+			.rarr
+			{
+				text-decoration:	none;
+				font-weight:		bold;
+			}
+		}
+
+		td.command
+		{
+			width:			33%;
+		}
+	}
+
+	table.table
+	{
+		width:			100%;
+		border:			1px solid;
+
+		tr.header
+		{
+			border:			0px solid;
+
+			th.actions
+			{
+			}
+
+			th.field
+			{
+			}
+		}
+	}
+}
