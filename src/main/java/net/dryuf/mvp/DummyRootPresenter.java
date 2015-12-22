@@ -38,7 +38,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import net.dryuf.srvui.Request;
-import org.apache.commons.codec.Charsets;
+import java.nio.charset.StandardCharsets;
 
 import net.dryuf.core.CallerContext;
 
@@ -76,7 +76,7 @@ public class DummyRootPresenter extends net.dryuf.mvp.CommonRootPresenter
 	public void			output(String text)
 	{
 		try {
-			outputStream.write(text.getBytes(Charsets.UTF_8));
+			outputStream.write(text.getBytes(StandardCharsets.UTF_8));
 		}
 		catch (IOException e) {
 			throw new RuntimeException(e);

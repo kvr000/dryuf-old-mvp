@@ -34,7 +34,7 @@
 
 package net.dryuf.mvp;
 
-import org.apache.commons.codec.Charsets;
+import java.nio.charset.StandardCharsets;
 import net.dryuf.core.Options;
 import net.dryuf.mvp.ChildPresenter;
 import net.dryuf.mvp.Presenter;
@@ -55,7 +55,7 @@ public class ResourcePageTemplatingPresenter extends TemplatingPresenter
 	@Override
 	public String			readResource()
 	{
-		return new String(getCallerContext().getAppContainer().getCpResourceContent(resourceName), Charsets.UTF_8);
+		return new String(getCallerContext().getAppContainer().getCpResourceContent(resourceName), StandardCharsets.UTF_8);
 	}
 
 	protected String		resourceName;

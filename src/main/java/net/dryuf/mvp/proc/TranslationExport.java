@@ -37,7 +37,7 @@ package net.dryuf.mvp.proc;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Map;
-import org.apache.commons.codec.Charsets;
+import java.nio.charset.StandardCharsets;
 import net.dryuf.core.StringUtil;
 
 
@@ -71,6 +71,6 @@ public class TranslationExport extends net.dryuf.mvp.proc.JsonCachedExport
 		if (out.length() > 1)
 			out.setLength(out.length()-1);
 		out.append("}");
-		return new ByteArrayInputStream(out.toString().getBytes(Charsets.UTF_8));
+		return new ByteArrayInputStream(out.toString().getBytes(StandardCharsets.UTF_8));
 	}
 }

@@ -39,7 +39,7 @@ import java.io.InputStream;
 
 import net.dryuf.oper.MetaExport;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.codec.Charsets;
+import java.nio.charset.StandardCharsets;
 
 import net.dryuf.core.ReportException;
 import net.dryuf.core.StringUtil;
@@ -75,6 +75,6 @@ public class MetaExportPresenter extends net.dryuf.mvp.proc.XmlCachedExport
 		catch (ClassNotFoundException e) {
 			return null;
 		}
-		return new ByteArrayInputStream(MetaExport.buildMeta(this.getCallerContext(), clazz, viewName, getRootPresenter().getContextPath()+"/_oper/"+className+"/").getBytes(Charsets.UTF_8));
+		return new ByteArrayInputStream(MetaExport.buildMeta(this.getCallerContext(), clazz, viewName, getRootPresenter().getContextPath()+"/_oper/"+className+"/").getBytes(StandardCharsets.UTF_8));
 	}
 }

@@ -44,7 +44,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.apache.commons.codec.Charsets;
+import java.nio.charset.StandardCharsets;
 
 import net.dryuf.core.Options;
 import net.dryuf.mvp.TextRootPresenter;
@@ -76,7 +76,7 @@ public class JacksonCharsetTest extends AppTenvObject
 	public void			testRoot() throws Exception
 	{
 		Map<String, Object> m;
-		m = new ObjectMapper().readValue("{ \"x\": \"čšří\" }".getBytes(Charsets.UTF_8), Map.class);
+		m = new ObjectMapper().readValue("{ \"x\": \"čšří\" }".getBytes(StandardCharsets.UTF_8), Map.class);
 		assertEquals("čšří", m.get("x"));
 	}
 }
