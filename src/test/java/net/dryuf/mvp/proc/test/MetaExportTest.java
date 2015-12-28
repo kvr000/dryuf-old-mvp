@@ -60,17 +60,18 @@ public class MetaExportTest extends AppTenvObject
 				"<req roleGet=\"guest\" roleSet=\"guest\" roleNew=\"guest\" roleDel=\"guest\" />\n"+
 				"<pkeyDef pkEmbedded=\"0\" pkClass=\"java.lang.Long\" pkField=\"testId\" additionalPkFields=\"\">\n"+
 				"</pkeyDef>\n"+
-				"<refFields fields=\"testId,svalue,ivalue\" />\n"+
+				"<refFields fields=\"testId,name,svalue,ivalue\" />\n"+
 				"<relations>\n"+
 				"</relations>\n"+
 				"<fields name=\"net.dryuf.tenv.TestMain\">\n"+
 				"<field name=\"testId\" assocType=\"none\" roleGet=\"guest\" roleSet=\"_denied_\" roleNew=\"guest\" mandatory=\"1\" display=\"text(160px)\" textual=\"net.dryuf.textual.NaturalLongTextual\"></field>\n"+
+				"<field name=\"name\" assocType=\"none\" roleGet=\"guest\" roleSet=\"guest\" roleNew=\"guest\" mandatory=\"1\" display=\"text(160px)\" textual=\"net.dryuf.textual.TrimTextual\"></field>\n"+
 				"<field name=\"svalue\" assocType=\"none\" roleGet=\"guest\" roleSet=\"guest\" roleNew=\"guest\" mandatory=\"1\" display=\"text(160px)\" textual=\"net.dryuf.textual.TrimTextual\"></field>\n"+
 				"<field name=\"ivalue\" assocType=\"none\" roleGet=\"guest\" roleSet=\"guest\" roleNew=\"guest\" mandatory=\"0\" display=\"text(160px)\" textual=\"net.dryuf.textual.NaturalTextual\"></field>\n"+
 				"</fields>\n"+
 				"<actions>\n"+
 				"</actions>\n"+
-				"<view name=\"Default\" supplier=\"\" renderer=\"\" clientClass=\"\" fields=\"testId,svalue,ivalue\" actions=\"\"/>\n"+
+				"<view name=\"Default\" supplier=\"\" renderer=\"\" clientClass=\"\" fields=\"testId,name,svalue,ivalue\" actions=\"\"/>\n"+
 				"</meta>\n"+
 				"",
 				meta);
