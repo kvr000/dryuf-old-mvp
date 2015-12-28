@@ -39,6 +39,7 @@ import java.util.List;
 
 import javax.validation.constraints.NotNull;
 
+import net.dryuf.core.Dryuf;
 import org.apache.commons.lang3.StringUtils;
 
 import net.dryuf.app.FieldDef;
@@ -77,7 +78,7 @@ public class ListRenderer <T, CARRIER> extends net.dryuf.datagrid.DataPresenterR
 
 	public String			getListCss()
 	{
-		return "net-dryuf-datagrid-DataPresenter-list-behaviour";
+		return Dryuf.dashClassname(DataPresenter.class)+"-list-behaviour";
 	}
 
 	public void			renderList(DataPresenter<T> presenter, List<EntityHolder<T>> data, CARRIER carrier)
