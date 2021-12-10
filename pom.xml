@@ -29,7 +29,7 @@
 		<xmlapis.version>1.4.01</xmlapis.version>
 		<jackson.version>1.9.3</jackson.version>
 
-		<log4j.version>2.2</log4j.version>
+		<log4j.version>2.15.0</log4j.version>
 
 		<guava.version>18.0</guava.version>
 		
